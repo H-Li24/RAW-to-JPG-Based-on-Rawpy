@@ -2,8 +2,6 @@ import rawpy
 import glob
 import os
 import imageio
-import shutil
-import zipfile
 
 
 def raw2jpg(raw_file_name, dst="JPG", _suffix=".ARW"):
