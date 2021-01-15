@@ -15,7 +15,6 @@ raw_demo
 ```
 import rawpy
 import imageio
-
 ```
 
 
