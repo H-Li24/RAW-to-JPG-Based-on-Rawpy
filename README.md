@@ -11,6 +11,14 @@ raw_demo
 ```
 其中ARW是源目录，存放你的RAW文件；JPG是目标目录，存放转换后的JPG文件。
 
+依赖库：
+```
+import rawpy
+import imageio
+
+```
+
+
 运行方法：
 
 直接运行raw_jpg.py即可。
