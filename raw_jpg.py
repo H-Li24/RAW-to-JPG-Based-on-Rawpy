@@ -8,10 +8,10 @@ import zipfile
 
 def raw2jpg(raw_file_name, dst="JPG", _suffix=".ARW"):
     """
-    :param raw_file_name:
-    :param dst: 存储目录
-    :param _suffix: 文件后缀
-    :return:
+    raw_file_name: 图片绝对路径
+    dst: 目标目录
+    _suffix: 文件后缀
+    return:
     """
     with rawpy.imread(raw_file_name) as raw:
         im = raw.postprocess(
@@ -33,5 +33,5 @@ for num, raw_file in enumerate(raw_files):
     raw2jpg(raw_file, _suffix=src_suffix)
 
 print("转换完成！")
-print("所有数据保留在Dst目录，请前往查看!")
+print("所有数据保留在JPG目录，请前往查看!")
 print("Done!")
