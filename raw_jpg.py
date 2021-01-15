@@ -6,7 +6,7 @@ import shutil
 import zipfile
 
 
-def raw2jpg(raw_file_name, dst="Temp_JPG", _suffix=".ARW"):
+def raw2jpg(raw_file_name, dst="JPG", _suffix=".ARW"):
     """
     :param raw_file_name:
     :param dst: 存储目录
@@ -29,7 +29,7 @@ raw_files = glob.glob(f"ARW/*{src_suffix}")
 
 print("正在转换中，请耐心等待....")
 for num, raw_file in enumerate(raw_files):
-    if num % 5 == 0: print(f"已转换{num}张照片...")
+    if num % 1 == 0: print(f"已转换{num+1}张照片...")
     raw2jpg(raw_file, _suffix=src_suffix)
 
 print("转换完成！")
